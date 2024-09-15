@@ -28,6 +28,7 @@ export default () => {
     <>
       <p>Submit count: {count}</p>
       <button
+        type="button"
         onClick={() => {
           submit();
         }}
