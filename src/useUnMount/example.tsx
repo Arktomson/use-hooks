@@ -36,6 +36,7 @@ export default () => {
           onClick={() => {
             setIshow(isShow ? false : true);
           }}
+          type="button"
         >
           点击toggle
         </button>

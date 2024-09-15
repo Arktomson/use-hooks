@@ -18,7 +18,7 @@ export default () => {
 
   const generate = useCallback(() => {
     return [...map.value].map((it) => (
-      <Space direction="horizontal">
+      <Space direction="horizontal" key={it[0]}>
         <div>{it[0]}</div>
         <div>{it[1]}</div>
       </Space>

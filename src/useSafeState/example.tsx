@@ -24,7 +24,9 @@ export default () => {
 
   return (
     <div>
-      <button onClick={() => setVisible(false)}>Unmount</button>
+      <button onClick={() => setVisible(false)} type="button">
+        Unmount
+      </button>
       {visible && <Child />}
     </div>
   );
