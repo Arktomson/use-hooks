@@ -4,13 +4,16 @@
     "declaration": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
+    // "target": "ES2015",
     "jsx": "react",
     "baseUrl": "./",
     "paths": {
       "@@/*": [".dumi/tmp/*"],
       "use-hooks": ["src"],
       "use-hooks/*": ["src/*", "*"]
-    }
+    },
+    "lib": ["ES2015", "DOM"],
+    "downlevelIteration": true
   },
   "include": [".dumirc.ts", "src/**/*"]
 }
