@@ -1,0 +1,28 @@
+---
+title: useUnMountedRef
+toc: content
+group:
+  title: LifeCycle # 注意缩进
+---
+
+# useUnMountedRef
+
+获取当前组件是否已经卸载的 Hook。
+
+## 代码演示
+
+### 基础用法
+
+<code src="./example"></code>
+
+## API
+
+```ts
+const unmountRef: { current: boolean } = useUnmountedRef();
+```
+
+### Result
+
+| 参数       | 说明             | 类型                   |
+| ---------- | ---------------- | ---------------------- |
+| unmountRef | 组件是否已经卸载 | `{ current: boolean }` |
