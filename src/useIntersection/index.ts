@@ -1,17 +1,22 @@
 import { useEffect, useRef } from 'react';
 
 const map = new WeakMap();
-const ob = new ResizeObserver((entries: ResizeObserverEntry[]) => {
+const ob = new IntersectionObserver((entries: IntersectionObserverEntry[]) => {
   for (let ele of entries) {
     const handler = map.get(ele.target);
-    handler?.(ele);
+    handler?.(ele, ob);
   }
 });
-export const useResize = (cb: (entry: ResizeObserverEntry) => void) => {
+export const useIntersection = <T extends HTMLElement>(
+  cb: (
+    entry: IntersectionObserverEntry,
+    observer: IntersectionObserver,
+  ) => void,
+) => {
   if (typeof cb !== 'function') {
     throw new TypeError('The parameter should be a callback function');
   }
-  const observerRef = useRef(null!);
+  const observerRef = useRef<T>(null!);
 
   useEffect(() => {
     if (!observerRef.current) {
