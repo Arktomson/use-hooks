@@ -14,5 +14,6 @@ export default defineConfig({
   styles: [
     `.dumi-default-sidebar .dumi-default-sidebar-group dt { font-size: 20px; text-transform: none; }`,
   ],
-  base: './',
+  base: '/use-hooks/',
+  publicPath: '/use-hooks/',
 });
