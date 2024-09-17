@@ -15,5 +15,4 @@ export default defineConfig({
     `.dumi-default-sidebar .dumi-default-sidebar-group dt { font-size: 20px; text-transform: none; }`,
   ],
   base: './',
-  publicPath: './',
 });
