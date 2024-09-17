@@ -23,6 +23,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
+          github_token: ${{ secrets.ACTION_TOKEN }}
           # 文档目录，如果是 react 模板需要修改为 docs-dist
           publish_dir: ./docs-dist
