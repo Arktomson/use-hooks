@@ -9,6 +9,7 @@ export default defineConfig({
     nav: [
       { title: '指南', link: '/guide' },
       { title: 'Hooks', link: '/components/use-lock-fn' },
+      { title: 'GitHub', link: 'https://github.com/shengzhangchen/use-hooks' },
     ],
   },
   styles: [
