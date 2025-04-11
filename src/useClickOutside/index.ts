@@ -5,7 +5,6 @@ export const useClickOutside = (
   fn: () => void,
 ) => {
   useEffect(() => {
-    console.log('更新');
 
     const clickAdFn = (e: MouseEvent) => {
       if (
