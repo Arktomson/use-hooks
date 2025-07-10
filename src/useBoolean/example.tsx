@@ -4,7 +4,7 @@
  */
 import { Button, Space } from 'antd';
 import React from 'react';
-import { useBoolean } from 'use-hooks';
+import { useBoolean } from "use-hooks";
 
 export default () => {
   const [state] = useBoolean(true);

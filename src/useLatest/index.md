@@ -1,6 +1,7 @@
 ---
 title: useLatest
 toc: content
+tocDepth: 5
 group:
   title: Extra # 注意缩进
 ---
@@ -13,7 +14,7 @@ group:
 
 ### 基础用法
 
-<code src="./example"></code>
+<code src="./example" ></code>
 
 ## API
 
